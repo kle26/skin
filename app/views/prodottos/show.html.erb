@@ -1,0 +1,33 @@
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= @prodotto.marca %>  <%= @prodotto.nome %></h1>
+    <p class="lead">.</p>
+  </div>
+</div>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @prodotto.categoria %>
+</p>
+
+<p>
+  <strong>Contenuto:</strong>
+  <%= @prodotto.contenuto %>
+</p>
+
+<p>
+  <strong>Utilizzo:</strong>
+  <%= @prodotto.utilizzo %>
+</p>
+
+<p>
+  <strong>Media voti:</strong>
+  <%= @prodotto.media_voti %>
+</p>
+
+<%= link_to 'Edit', edit_prodotto_path(@prodotto),class:"btn btn-dark"%> |
+<%= link_to 'Back', prodottos_path,class:"btn btn-dark" %>
+
+
